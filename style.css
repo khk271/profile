@@ -1,16 +1,23 @@
 @import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 body {
-  font-family: 'IBM Plex Sans Condensed', 'sans-serif';
+  font-family: 'Lato', 'sans-serif';
   color: rgb(50, 50, 50);
   background-color: rgb(240, 240, 245);
-  font-size: 14px;
+  font-size: 12px;
   line-height: 16px;
 }
 
-h1, h2, h3 {
+h1 {
+  font-family: 'IBM Plex Sans', 'sans-serif';
+  color: rgb(97, 137, 133);
+  font-size: 32px;
+}
+
+h2, h3 {
   font-family: 'IBM Plex Sans', 'sans-serif';
   color: rgb(97, 137, 133);
   font-size: 16px;
@@ -22,7 +29,7 @@ a {
 }
 
 a:hover {
-  color: rgb(77, 83, 94);
+  color: rgb(67, 73, 84);
 }
 
 .social-icon {
@@ -33,9 +40,9 @@ a:hover {
   background-color: white;
   margin: 24px;
   padding: 24px;
-  text-align: center;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0,0,0,0.2);
+  text-align: center;
 }
 
 .container {
@@ -47,9 +54,10 @@ a:hover {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  border: solid;
+  text-align: center;
+/*  border: solid;
   border-color: rgb(97, 137, 133);
-  border-width: 4px;
+  border-width: 4px;*/
 }
 
 .list-inline {
@@ -62,9 +70,19 @@ a:hover {
   margin: 8px;
 }
 
-.header h1 {
-  font-size: 32px;
+.button {
+  background-color: rgb(48, 67, 85);
+  padding: 8px;
+  border-radius: 2px;
+  margin: 0 auto;
+  color: white;
 }
+
+.button:hover {
+  background-color: rgb(28, 47, 65);
+  color: white;
+}
+
 
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
@@ -77,6 +95,10 @@ a:hover {
   .container {
     width: 500px;
   }
+  .avatar_pic{
+    width: 175px;
+    height: 175px;
+  }
 }
 @media (max-width: 540px) {
   /* For a screen < 540px, this CSS will be read */
@@ -84,7 +106,7 @@ a:hover {
     width: 300px;
   }
   .avatar_pic{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
   }
 }
